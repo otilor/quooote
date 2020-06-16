@@ -15,6 +15,6 @@ func main() {
 		Addr: "127.0.0.1:8000",
 		Handler: router,
 	}
-
+	logrus.Infoln("App is listening on", server.Addr)
 	logrus.Fatalln(server.ListenAndServe())
 }
