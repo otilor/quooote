@@ -10,6 +10,7 @@ import (
 
 func main() {
 	router := mux.NewRouter()
+	router.PathPrefix("/assets").Handler(http.StripPrefix("/assets/", http.FileServer(http.Dir("assets"))))
 	router.HandleFunc("/", quooote.Index)
 	server := &http.Server{
 		Addr: "127.0.0.1:8000",

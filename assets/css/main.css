@@ -16,14 +16,13 @@ body {
 }
 }
 .leftside {
-    background-color: #fff;
-    color: #1B1B33;
+    background-color: #1B1B33;
     /*display: flex;*/
     /*justify-content: center;*/
     /*align-items: center;*/
 }
 .rightside {
-    background-color: #1B1B33;
+    background-color: #d04c4c;
 
 }
 img {
