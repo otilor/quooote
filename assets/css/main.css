@@ -1,13 +1,45 @@
 body {
-
+    background-color: #fff;
     font-size: 30px;
+    font-family: "Product Sans";
 }
 
-
+@font-face {
+    font-family: Product Sans;
+    src: url("../fonts/Product Sans Regular.ttf");
+}
 .div-center {
     position: absolute;
     padding: 20px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+
+.standard-banner {
+    background-color: #722f37;
+    height: 500px;
+    width: 700px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cardolina {
+    background-color: #fff;
+    color: #EE5A24;
+    border-radius: 5px;
+    padding: 12px;
+    margin: 0 auto;
+    hyphens: auto;
+}
+.col-xs-12, .col-sm-6 {
+    font-size: 20px;
+}
+.btn-standard {
+    background-color: #EE5A24;
+    color: #fff;
 }
