@@ -17,5 +17,10 @@ func AddQuote (w http.ResponseWriter, r *http.Request) {
 }
 
 func PostQuote (w http.ResponseWriter, r *http.Request) {
-	http.Redirect(w, r,"/quotes", 301)
+	quotes:= Quote{
+		Title:  "Star wars trek",
+		Body:   "Whenever you see a Fox, don't run",
+		Author: "Gabriel",
+	}
+	renderWithData(w, "posted_quote.html", r, quotes)
 }
