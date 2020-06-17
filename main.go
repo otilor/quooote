@@ -12,7 +12,8 @@ func main() {
 	router := mux.NewRouter()
 	router.PathPrefix("/assets").Handler(http.StripPrefix("/assets/", http.FileServer(http.Dir("assets"))))
 	router.HandleFunc("/", quooote.Index)
-	router.HandleFunc("/quotes/add", quooote.AddQuote)
+	router.HandleFunc("/quotes/add", quooote.AddQuote).Methods("GET")
+	router.HandleFunc("/quotes/add", quooote.PostQuote).Methods("POST")
 	server := &http.Server{
 		Addr: "127.0.0.1:8000",
 		Handler: router,

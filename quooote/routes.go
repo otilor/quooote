@@ -11,3 +11,7 @@ func Index (w http.ResponseWriter, r *http.Request) {
 func AddQuote (w http.ResponseWriter, r *http.Request) {
 	render(w, "add_quote.html", r)
 }
+
+func PostQuote (w http.ResponseWriter, r *http.Request) {
+	render(w, "posted_quote.html", r)
+}
