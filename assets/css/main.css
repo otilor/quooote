@@ -43,3 +43,11 @@ body {
     background-color: #EE5A24;
     color: #fff;
 }
+
+.input-title {
+    border: none;
+}
+
+textarea {
+    resize: none;
+}
