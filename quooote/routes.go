@@ -17,9 +17,12 @@ func AddQuote (w http.ResponseWriter, r *http.Request) {
 }
 
 func PostQuote (w http.ResponseWriter, r *http.Request) {
+	_ = r.ParseForm()
+	title := r.FormValue("quote_title")
+	body := r.FormValue("quote_body")
 	quotes:= Quote{
-		Title:  "Star wars trek",
-		Body:   "Whenever you see a Fox, don't run",
+		Title:  title,
+		Body:   body,
 		Author: "Gabriel",
 	}
 	renderWithData(w, "posted_quote.html", r, quotes)
