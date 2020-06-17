@@ -3,58 +3,11 @@ body {
     font-size: 30px;
 }
 
-.container {
-    margin-top: 10%;
-}
-.leftside, .rightside {
-    height: 50vh;
-    width: 100%;
-}
-@media screen and (min-width: 768px){
-.leftside, .rightside {
-    height: 100vh;
-}
-}
-.leftside {
-    background-color: #1B1B33;
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-}
-.rightside {
-    background-color: #d04c4c;
-
-}
-img {
-    padding: 10px;
-    animation: bounce; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s;
-}
-
-
-a {
-    text-decoration: none;
-    color: white;
-
-}
-a:hover {
-    text-decoration: none;
-    color: white;
-}
 
 .div-center {
     position: absolute;
+    padding: 20px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-.main-content {
-    padding: 25px;
-}
-.btn-new {
-    background-color: #24141C;
-    color: #fff;
-}
-button {
-    background-color: #000;
 }
