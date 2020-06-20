@@ -42,7 +42,9 @@ body {
     background-color: #EE5A24;
     color: #fff;
 }
-
+.card {
+    border: 1px solid #28a745;;
+}
 .input-title {
     border: none;
 }
