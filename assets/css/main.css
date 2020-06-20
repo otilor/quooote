@@ -8,6 +8,7 @@ body {
     font-family: Product Sans;
     src: url("../fonts/Product Sans Regular.ttf");
 }
+
 .div-center {
     position: absolute;
     padding: 20px;
@@ -15,7 +16,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 
 .standard-banner {
     background-color: #722f37;
@@ -27,7 +27,6 @@ body {
     align-items: center;
 }
 
-
 .cardolina {
     background-color: #fff;
     border-radius: 5px;
@@ -35,16 +34,20 @@ body {
     margin: 0 auto;
     hyphens: auto;
 }
+
 .col-xs-12, .col-sm-6 {
     font-size: 20px;
 }
+
 .btn-standard {
     background-color: #EE5A24;
     color: #fff;
 }
+
 .card {
     border: 1px solid #28a745;;
 }
+
 .input-title {
     border: none;
 }
