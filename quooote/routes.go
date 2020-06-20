@@ -27,3 +27,9 @@ func PostQuote (w http.ResponseWriter, r *http.Request) {
 	}
 	renderWithData(w, "posted_quote.html", r, quotes)
 }
+
+// Pending Quotes Handler Functions
+
+func Pending(w http.ResponseWriter, r *http.Request) {
+	render(w, "pending_quotes.html", r)
+}

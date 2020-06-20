@@ -16,6 +16,8 @@ func main() {
 	router.HandleFunc("/quotes/add", quooote.AddQuote).Methods("GET")
 	router.HandleFunc("/quotes/add", quooote.PostQuote).Methods("POST")
 
+	// Pending quotes
+	router.HandleFunc("/quotes/complete", quooote.Pending).Methods("GET")
 
 
 	server := &http.Server{
