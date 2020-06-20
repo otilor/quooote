@@ -50,3 +50,8 @@ body {
 textarea {
     resize: none;
 }
+
+.key-bindings {
+    width: 12vh;
+    margin: 3px;
+}
