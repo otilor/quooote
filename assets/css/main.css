@@ -60,3 +60,11 @@ textarea {
     width: 12vh;
     margin: 3px;
 }
+
+
+/* Ids */
+
+
+#facebook_share, #twitter_share, #instagram_share {
+    cursor: pointer;
+}
