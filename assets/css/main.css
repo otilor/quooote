@@ -71,3 +71,16 @@ textarea {
 #facebook_share, #twitter_share, #instagram_share {
     cursor: pointer;
 }
+
+.text-gold {
+    color: #fab95b;
+}
+
+.bg-gold {
+    background-color: #fab95b;
+}
+
+.pending-quotes:hover {
+    background-color: #fb7813;
+    cursor: pointer;
+}
