@@ -64,14 +64,6 @@ textarea {
     margin: 3px;
 }
 
-
-/* Ids */
-
-
-#facebook_share, #twitter_share, #instagram_share {
-    cursor: pointer;
-}
-
 .text-gold {
     color: #fab95b;
 }
@@ -82,5 +74,20 @@ textarea {
 
 .pending-quotes:hover {
     background-color: #fb7813;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.no-underline {
+    text-underline-color: white;
+}
+
+.text-black {
+    color: #000;
+}
+
+/* Ids */
+#facebook_share, #twitter_share, #instagram_share {
     cursor: pointer;
 }
