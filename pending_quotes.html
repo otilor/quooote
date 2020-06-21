@@ -12,30 +12,34 @@
     <p class="text-center" style="text-decoration: underline">Quooote App</p>
     <div class = "div-center">
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-lg-12 card no-gutters cardolina">
+            <!-- Beginning of pending quotes i.e. quotes that need to be completed. -->
+            <div class="col-xs-12 col-sm-12 col-lg-12 card bg-warning border-none">
 
-                <div class="card-body d-flex flex-column">
-                    <p class="text-danger text-center my-0">{{ .Title }}<i class="cil-check-circle"></i></p>
-                    <hr class="cif-hr" style="width: 50vh">
-                    <q class="text-center my-2"><span>{{ .Body }}</span></q>
-                    <i class="text-right my-1">-{{ .Author }}</i>
-                    <a href="/quotes/add" class="btn btn-outline-success mt-auto" value="Create a new one">Create a new one</a>
+                <div class="card-body d-flex flex-column text-dark">
+                Quote 1.
+                </div>
 
-                    <hr class="cif-hr" style="width: 50vh">
 
-                    <!-- Social media platforms-->
-                    <div class="text-center my-2">
-                        <i id = "facebook_share" class="cib-facebook mt-auto"></i>
-                        <i id = "twitter_share" class="cib-twitter mt-auto"></i>
-                        <i id = "instagram_share" class="cib-instagram mt-auto"></i>
-                    </div>
+            </div>
 
+            <div class="col-xs-12 col-sm-12 col-lg-12 card my-3 bg-warning border-none">
+
+                <div class="card-body d-flex flex-column text-dark">
+                    Quote 2.
+                </div>
+
+
+            </div><div class="col-xs-12 col-sm-12 col-lg-12 card no-gutters bg-warning border-none">
+
+                <div class="card-body d-flex flex-column text-dark">
+                    Quote 3.
                 </div>
 
 
             </div>
 
         </div>
+
     </div>
 </div>
 

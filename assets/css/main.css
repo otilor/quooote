@@ -47,6 +47,9 @@ body {
 .card {
     border: 1px solid #28a745;;
 }
+.border-none {
+    border: none;
+}
 
 .input-title {
     border: none;
