@@ -115,3 +115,7 @@ textarea {
 #facebook_share, #twitter_share, #instagram_share {
     cursor: pointer;
 }
+
+.bg-funky {
+    background-color: #e32249;
+}
