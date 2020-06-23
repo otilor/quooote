@@ -91,10 +91,14 @@ textarea {
 }
 
 .start, .start:hover {
+    text-transform: uppercase;
+    padding: 1px 1px;
     text-decoration: none;
 }
 
 .stop, .stop:hover {
+    text-transform: uppercase;
+    padding: 1px 1px;
     text-decoration: none;
 }
 
