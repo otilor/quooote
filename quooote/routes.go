@@ -39,5 +39,6 @@ func Pending(w http.ResponseWriter, r *http.Request) {
 func ViewQuote(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	id := vars["id"]
-	findQuote(id)
+	quooteToBeRendered := findQuote(id)
+	renderWithData(w, "specific_quote.html", r, quooteToBeRendered)
 }
