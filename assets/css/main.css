@@ -75,22 +75,38 @@ textarea {
 
 .btn-creep {
     color : #fff;
-    background-color: #d92027;
+    background-color: #07031a;
+    text-decoration: none;
 }
 
 .btn-creep-dark {
+    border: none;
     color : #fff;
     background-color: #000;
 }
 
 .btn-creep-dark:hover {
     color : #fff;
-    background-color: #d92027;
+    background-color: #e7305b;
+}
+
+.start, .start:hover {
+    text-decoration: none;
+}
+
+.stop, .stop:hover {
+    text-decoration: none;
+}
+
+.card-no-radius {
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .btn-creep:hover {
     color : #fff;
     background-color: #000;
+    text-decoration: none;
 }
 
 .text-gold {
