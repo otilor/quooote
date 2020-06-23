@@ -100,6 +100,7 @@ textarea {
 .pending-quotes:hover {
     background-color: #fb7813;
     text-decoration: none;
+    color: black;
     cursor: pointer;
 }
 
