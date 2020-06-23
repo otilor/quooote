@@ -1,5 +1,5 @@
 body {
-    background-color: #fff;
+    background: url("../img/background.jpg");
     font-size: 30px;
     font-family: "Product Sans";
 }
@@ -8,7 +8,11 @@ body {
     font-family: Product Sans;
     src: url("../fonts/Product Sans Regular.ttf");
 }
-
+@font-face {
+    font-family: Little Orion;
+    font-size: 20px;
+    src: url("../fonts/Little Orion.otf");
+}
 .div-center {
     position: absolute;
     padding: 20px;
@@ -71,22 +75,42 @@ textarea {
 
 .btn-creep {
     color : #fff;
-    background-color: #d92027;
+    background-color: #07031a;
+    text-decoration: none;
 }
 
 .btn-creep-dark {
+    border: none;
     color : #fff;
     background-color: #000;
 }
 
 .btn-creep-dark:hover {
     color : #fff;
-    background-color: #d92027;
+    background-color: #e7305b;
+}
+
+.start, .start:hover {
+    text-transform: uppercase;
+    padding: 1px 1px;
+    text-decoration: none;
+}
+
+.stop, .stop:hover {
+    text-transform: uppercase;
+    padding: 1px 1px;
+    text-decoration: none;
+}
+
+.card-no-radius {
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .btn-creep:hover {
     color : #fff;
     background-color: #000;
+    text-decoration: none;
 }
 
 .text-gold {
@@ -119,4 +143,8 @@ textarea {
 
 .bg-funky {
     background-color: #e32249;
+}
+
+q {
+    font-family: "Little Orion";
 }

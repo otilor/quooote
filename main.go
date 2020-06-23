@@ -18,6 +18,7 @@ func main() {
 
 	// Pending quotes
 	router.HandleFunc("/quotes/complete", quooote.Pending).Methods("GET")
+	router.HandleFunc("/quotes/{id:[0-9]+}", quooote.ViewQuote).Methods("GET")
 
 
 	server := &http.Server{
