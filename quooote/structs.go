@@ -5,3 +5,11 @@ type Quote struct {
 	Body string
 	Author string
 }
+
+type Quoote struct {
+	Id	int
+	Punchline string
+	Body string
+	StartedBy int
+	Status int
+}
