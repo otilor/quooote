@@ -52,3 +52,32 @@ func getPendingQuotes() (pendingQuotes []Quoote){
 	fmt.Println(PendingQuotes)
 	return PendingQuotes
 }
+
+
+func findQuote(quoteId string) Quoote {
+	fmt.Println("You are searching for", quoteId)
+	db := dbConn()
+
+	findQuoteStatement, err := db.Query("SELECT * FROM quotes WHERE id = ?", quoteId)
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+
+	var id, status, startedBy int
+	var punchline, body string
+
+	var quoote Quoote
+
+	for findQuoteStatement.Next() {
+		_ = findQuoteStatement.Scan(&id, &punchline, &body, &startedBy, &status)
+
+		quoote.Id = id
+		quoote.Punchline = punchline
+		quoote.Body = body
+		quoote.StartedBy = startedBy
+		quoote.Status = status
+	}
+	fmt.Println(quoote)
+	return quoote
+}

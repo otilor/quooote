@@ -1,6 +1,7 @@
 package quooote
 
 import (
+	"github.com/gorilla/mux"
 	"net/http"
 )
 
@@ -33,4 +34,10 @@ func PostQuote (w http.ResponseWriter, r *http.Request) {
 func Pending(w http.ResponseWriter, r *http.Request) {
 	data := getPendingQuotes()
 	renderWithData(w, "pending_quotes.html", r, data)
+}
+
+func ViewQuote(w http.ResponseWriter, r *http.Request) {
+	vars := mux.Vars(r)
+	id := vars["id"]
+	findQuote(id)
 }
