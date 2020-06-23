@@ -2,12 +2,13 @@ package quooote
 
 import (
 	"database/sql"
+	_ "github.com/go-sql-driver/mysql"
 	"log"
 )
 
 func dbConn() (db *sql.DB) {
 	dbDriver := "mysql"
-	dbUser := "root"
+	dbUser := "monk"
 	dbPass := "53Z4YPjvtiKsE8FF"
 	dbName := "quooote"
 
@@ -19,10 +20,12 @@ func dbConn() (db *sql.DB) {
 	return db
 }
 
-func (q *Quoote) getPendingQuotes() (pendingQuotes []Quoote){
+func getPendingQuotes() (pendingQuotes []Quoote){
 	db := dbConn()
+
+	PendingQuote := Quoote{}
 	PendingQuotes := []Quoote{}
-	stmtOut, err := db.Query("SELECT * FROM quootes WHERE status = ?", 1)
+	stmtOut, err := db.Query("SELECT * FROM quotes WHERE status = ?", 1)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -37,13 +40,13 @@ func (q *Quoote) getPendingQuotes() (pendingQuotes []Quoote){
 
 		_ = stmtOut.Scan(&id, &punchline, &body, &startedBy, &status)
 
-		q.Id = id
-		q.Body = body
-		q.Punchline = punchline
-		q.StartedBy = startedBy
-		q.Status = status
+		PendingQuote.Id = id
+		PendingQuote.Body = body
+		PendingQuote.Punchline = punchline
+		PendingQuote.StartedBy = startedBy
+		PendingQuote.Status = status
 
-		PendingQuotes = append(PendingQuotes, q)
+		PendingQuotes = append(PendingQuotes, PendingQuote)
 	}
 	return PendingQuotes
 }
