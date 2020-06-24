@@ -42,3 +42,16 @@ func ViewQuote(w http.ResponseWriter, r *http.Request) {
 	quooteToBeRendered := findQuote(id)
 	renderWithData(w, "specific_quote.html", r, quooteToBeRendered)
 }
+
+func CreateQuote(w http.ResponseWriter, r *http.Request) {
+	_ = r.ParseForm()
+	quote := Quote{}
+	quote.Author = 2
+	quote.Title = r.FormValue("title")
+	quote.Body = r.FormValue("body")
+	createQuoteWith(&quote)
+}
+
+func createQuoteWith(data *Quote) {
+	_ = data
+}
