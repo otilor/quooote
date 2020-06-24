@@ -3,7 +3,7 @@ package quooote
 type Quote struct {
 	Title string
 	Body string
-	Author int
+	Author interface{}
 }
 
 type Quoote struct {
