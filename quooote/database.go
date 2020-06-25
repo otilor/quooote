@@ -55,7 +55,6 @@ func getPendingQuotes() (pendingQuotes []Quoote){
 
 
 func findQuote(quoteId string) Quoote {
-	fmt.Println("You are searching for", quoteId)
 	db := dbConn()
 
 	findQuoteStatement, err := db.Query("SELECT * FROM quotes WHERE id = ?", quoteId)
@@ -78,6 +77,5 @@ func findQuote(quoteId string) Quoote {
 		quoote.StartedBy = startedBy
 		quoote.Status = status
 	}
-	fmt.Println(quoote)
 	return quoote
 }

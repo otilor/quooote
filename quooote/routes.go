@@ -10,7 +10,7 @@ func Index (w http.ResponseWriter, r *http.Request) {
 }
 
 func FetchQuotes (w http.ResponseWriter, r *http.Request) {
-	render(w, "posted_quote.html", r)
+	http.Redirect(w, r, "/", http.StatusTemporaryRedirect)
 }
 
 func AddQuote (w http.ResponseWriter, r *http.Request) {
@@ -46,9 +46,10 @@ func ViewQuote(w http.ResponseWriter, r *http.Request) {
 func CreateQuote(w http.ResponseWriter, r *http.Request) {
 	_ = r.ParseForm()
 	quote := Quote{}
+
 	quote.Author = 2
-	quote.Title = r.FormValue("title")
-	quote.Body = r.FormValue("body")
+	quote.Title = r.FormValue("quote_title")
+	quote.Body = r.FormValue("quote_body")
 	createQuoteWith(&quote)
 }
 
