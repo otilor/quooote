@@ -3,34 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title>Quooote</title>
+
+    <!-- Styleshiiiiits!-->
     <link rel="stylesheet" href="assets/css/css/all.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <!-- End: styleshiiiits!-->
+
 </head>
+
+<!-- Begin body -->
 <body>
-<div class="container">
-    <p class="text-center" style="text-decoration: underline">Quooote App</p>
-    <div class = "div-center">
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-lg-5 card no-gutters cardolina text-center border-style card-no-radius">
-                <div class="card-body d-flex flex-column">
-                    <p class="text-dark text-break" style="font-family: 'Little Orion'">Create a quote</p>
-                    <a class="btn-danger mt-auto start" href="/quotes/add">start</a>
-                </div>
-            </div>
 
+    <div class="container">
+        <p class="text-center" style="text-decoration: underline">Quooote App</p>
+        <div class = "div-center">
 
-            <div class="col-xs-12 col-sm-6 col-lg-5 card no-gutters cardolina text-center border-style card-no-radius">
-                <div class="card-body d-flex flex-column">
-                    <p class="text-dark text-break" style="font-family: 'Little Orion'">Complete a quote</p>
-                    <a class="btn-success mt-auto stop" href="/quotes/complete">finish</a>
+            <!-- Begin: row -->
+            <div class="row">
+
+                <!-- Begin: create a quote card -->
+                <div class="col-xs-12 col-sm-6 col-lg-5 card no-gutters cardolina text-center border-style card-no-radius">
+                    <div class="card-body d-flex flex-column">
+                        <p class="text-dark text-break" style="font-family: 'Little Orion'">Create a quote</p>
+                        <a class="btn-danger mt-auto start" href="/quotes/add">start</a>
+                    </div>
                 </div>
+                <!-- End: create a quote card -->
+
+                <!-- Begin Complete quote card -->
+                <div class="col-xs-12 col-sm-6 col-lg-5 card no-gutters cardolina text-center border-style card-no-radius">
+
+                    <!-- Begin: card body -->
+                    <div class="card-body d-flex flex-column">
+                        <p class="text-dark text-break" style="font-family: 'Little Orion'">Complete a quote</p>
+                        <a class="btn-success mt-auto stop" href="/quotes/complete">finish</a>
+                    </div>
+                    <!-- End card body-->
+
+                </div>
+                <!-- End complete quote card-->
+
             </div>
+            <!-- End row -->
+
         </div>
     </div>
-</div>
 
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>

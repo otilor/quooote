@@ -2,7 +2,6 @@ package quooote
 
 import (
 	"database/sql"
-	"fmt"
 	_ "github.com/go-sql-driver/mysql"
 	"log"
 )
@@ -49,13 +48,11 @@ func getPendingQuotes() (pendingQuotes []Quoote){
 
 		PendingQuotes = append(PendingQuotes, PendingQuote)
 	}
-	fmt.Println(PendingQuotes)
 	return PendingQuotes
 }
 
 
 func findQuote(quoteId string) Quoote {
-	fmt.Println("You are searching for", quoteId)
 	db := dbConn()
 
 	findQuoteStatement, err := db.Query("SELECT * FROM quotes WHERE id = ?", quoteId)
@@ -78,6 +75,5 @@ func findQuote(quoteId string) Quoote {
 		quoote.StartedBy = startedBy
 		quoote.Status = status
 	}
-	fmt.Println(quoote)
 	return quoote
 }
