@@ -2,7 +2,6 @@ package quooote
 
 import (
 	"database/sql"
-	"fmt"
 	_ "github.com/go-sql-driver/mysql"
 	"log"
 )
@@ -49,7 +48,6 @@ func getPendingQuotes() (pendingQuotes []Quoote){
 
 		PendingQuotes = append(PendingQuotes, PendingQuote)
 	}
-	fmt.Println(PendingQuotes)
 	return PendingQuotes
 }
 
