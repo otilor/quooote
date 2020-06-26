@@ -148,3 +148,11 @@ textarea {
 q {
     font-family: "Little Orion";
 }
+
+#quote-delete {
+
+}
+
+.pointer {
+    cursor: pointer;
+}
