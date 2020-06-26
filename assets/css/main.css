@@ -166,3 +166,7 @@ q {
 .strikethrough {
     text-decoration: line-through;
 }
+
+.timer {
+    font-family: Technology;
+}

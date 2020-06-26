@@ -17,4 +17,20 @@ function submitForm () {
 function deleteQuote(obj, abc) {
     let quoteBody = document.getElementById("quote-body");
     quoteBody.className += "strikethrough";
+    startCountDown();
+}
+
+function startCountDown() {
+    let counter = 10;
+    id = document.getElementById("counter");
+    id.innerHTML = counter;
+
+    setInterval( function () {
+        counter--;
+
+        if (counter >= 0 ){
+            id.innerHTML = counter;
+
+        }
+    }, 1000);
 }
