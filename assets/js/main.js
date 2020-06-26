@@ -18,6 +18,7 @@ function deleteQuote(obj, abc) {
     let quoteBody = document.getElementById("quote-body");
     quoteBody.className += "strikethrough";
     startCountDown();
+
 }
 
 function startCountDown() {
@@ -28,9 +29,13 @@ function startCountDown() {
     setInterval( function () {
         counter--;
 
-        if (counter >= 0 ){
+        if (counter > 0 ){
             id.innerHTML = counter;
 
         }
+        if (counter === 0) {
+            window.location.href = "/";
+        }
     }, 1000);
+
 }
