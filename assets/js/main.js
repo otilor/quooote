@@ -13,3 +13,7 @@ function submitForm () {
         document.quooote_form.submit();
     }
 }
+
+function deleteQuote(obj, abc) {
+    alert(abc);
+}

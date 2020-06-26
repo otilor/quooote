@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="/assets/css/css/all.css">
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/main.css">
-
 </head>
 <body>
 <div class="container">
@@ -23,7 +22,7 @@
                         <q class="text-center"><p> {{ .Body }} </p></q>
 
                         <div class="text-center text-danger">
-                            <span id = "quote-delete" class="card-footer badge badge-secondary pointer bg-funky key-bindings">Delete</span> <span class="badge badge-success key-bindings">New</span><br>
+                            <span onclick="deleteQuote(this, 'deleteQuote')" id = "quote-delete" class="card-footer badge badge-secondary pointer bg-funky key-bindings">Delete</span> <span class="badge badge-success key-bindings">New</span><br>
                         </div>
 
                     </div>
